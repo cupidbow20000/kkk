@@ -50,14 +50,14 @@ export default function Header() {
                 style={{marginLeft:"10%", marginRight:"10%",  padding:"10px", border:"ridge" }}
                 >
                 <Grid container spacing={{ xs: 5, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                  <Grid className="upper" item xs={4} sm={4} md={4} key={0}>
-                    <Item>CRYPTO FOR ENTERPRISE</Item>
+                  <Grid item xs={4} sm={4} md={4} key={0}>
+                    <Item><p className="myupper">CRYPTO FOR ENTERPRISE</p></Item>
                   </Grid>
                   <Grid item xs={4} sm={4} md={4} key={0}>
-                    <Item>CRYPTO FOR INVESTORS</Item>
+                    <Item><p className="myupper">CRYPTO FOR INVESTORS</p></Item>
                   </Grid>
                   <Grid item xs={4} sm={4} md={4} key={0}>
-                    <Item>SETTLEMENT FOR INSTITUTIONS</Item>
+                    <Item><p className="myupper">SETTLEMENT FOR INSTITUTIONS</p></Item>
                   </Grid>
                   <Grid item xs={4} sm={4} md={4} key={0}>
                     <Item>Crypto Brokerage<br/>Build your crypto solution</Item>
@@ -74,6 +74,17 @@ export default function Header() {
                   <Grid item xs={4} sm={4} md={4} key={0}>
                     <Item>BUSD<br/>Regulated digital dollar</Item>
                   </Grid>
+                  <Grid item xs={4} sm={4} md={4} key={0}>
+                    <Item>Commodities<br/>Precious metals settlement</Item>
+                  </Grid>
+                  <Grid item xs={4} sm={4} md={4} key={1}></Grid>
+ 
+                  <Grid item xs={4} sm={4} md={4} key={0}></Grid>
+                  <Grid item xs={4} sm={4} md={4} key={0}></Grid>
+                  <Grid item xs={4} sm={4} md={4} key={0}>
+                    <Item>PAXG<br/>Tokenized gold</Item>
+                  </Grid>
+                  <Grid item xs={4} sm={4} md={4} key={0}></Grid>
                 </Grid>
               </Box>
         </div>

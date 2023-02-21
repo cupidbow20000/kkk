@@ -1,9 +1,10 @@
 .header{
     width:100%;
     height:50px;
-};
+}
 
-.upper {
+.myupper {
     font-weight: bold;
-    color:lightskyblue;
+    font-size: large;
+    color:rgb(21, 126, 196);
 }
