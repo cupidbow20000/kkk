@@ -65,7 +65,7 @@ export default function Header() {
             open={open}
             display={anchorEl}
             onMouseLeave={handleClose}
-            style={{marginLeft:"10%", marginRight:"10%",  padding:"10px", border:"ridge" }}
+            style={{marginLeft:"10%", marginRight:"10%",  padding:"10px", border:"ridge" , backgroundColor:"white"}}
             >
             <Grid container spacing={{ xs: 5, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
               <Grid item xs={4} sm={4} md={4} key={0}>
@@ -111,7 +111,7 @@ export default function Header() {
             open={open2}
             display={anchorEl2}
             onMouseLeave={handleClose2}
-            style={{ border:"ridge" }}
+            style={{ border:"ridge" , backgroundColor:"white"}}
             >
             <Grid container spacing={{ xs: 5, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
               <Grid item xs={4} sm={4} md={4} key={0}>
