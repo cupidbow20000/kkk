@@ -1,6 +1,9 @@
 import '../css/home.css';
 import * as React from 'react';
 
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+
 function Home() {
 
     const [ind, setInd] = React.useState(1);
@@ -41,16 +44,29 @@ function Home() {
 
                 <a className="prev" onClick={prevSlide.bind()}>&#10094;</a>
                 <a className="next" onClick={nextSlide.bind()}>&#10095;</a>
-                </div>
-                <br/>
-
-                <div style={{textAlign:"center"}}>
+            </div>
+            <br/>
+            <div style={{textAlign:"center"}}>
                 <span className="dot" onClick={currentSlide.bind(this, 1)}></span>
                 <span className="dot" onClick={currentSlide.bind(this, 2)}></span>
                 <span className="dot" onClick={currentSlide.bind(this, 3)}></span>
                 <span className="dot" onClick={currentSlide.bind(this, 4)}></span>
                 <span className="dot" onClick={currentSlide.bind(this, 5)}></span>
+            </div>
+            <h2>Paxos is a regulated blockchain infrastructure platform, building a new, open financial system.</h2>
+            <div className="flex-container">
+                <div>
+                    <img src="../custody.png"></img>
+                    <h3>Custody</h3>
+                    <p>We hold and safeguard physical and digital assets as a regulated Trust Company</p>
                 </div>
+                <div>
+                    <img src="../digitize.png"></img>
+                </div>
+                <div>
+                    <img src="../mobilize.png"></img>
+                </div>
+            </div>
         </div>
     );
 }
