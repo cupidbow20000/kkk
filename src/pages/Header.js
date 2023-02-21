@@ -10,13 +10,13 @@ import Grid from '@mui/material/Grid';
 
 export default function Header() {
 
-    const [anchorEl, setAnchorEl] = React.useState(false);
+    const [anchorEl, setAnchorEl] = React.useState("none");
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
-      setAnchorEl(!anchorEl);
+      setAnchorEl("block");
     };
     const handleClose = () => {
-      setAnchorEl(null);
+      setAnchorEl("none");
     };
 
     const Item = styled(Paper)(({ theme }) => ({
@@ -44,26 +44,35 @@ export default function Header() {
       </Button>
             
               <Box sx={{ flexGrow: 1 }} id="basic-menu"
+                open={open}
                 display={anchorEl}
-                onMouseOut={handleClose}>
-                <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                  <Grid item xs={2} sm={4} md={4} key={0}>
-                    <Item>1</Item>
+                onMouseOut={handleClose}
+                style={{marginLeft:"10%", marginRight:"10%",  padding:"10px", border:"ridge" }}
+                >
+                <Grid container spacing={{ xs: 5, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                  <Grid className="upper" item xs={4} sm={4} md={4} key={0}>
+                    <Item>CRYPTO FOR ENTERPRISE</Item>
                   </Grid>
-                  <Grid item xs={2} sm={4} md={4} key={0}>
-                    <Item>1</Item>
+                  <Grid item xs={4} sm={4} md={4} key={0}>
+                    <Item>CRYPTO FOR INVESTORS</Item>
                   </Grid>
-                  <Grid item xs={2} sm={4} md={4} key={0}>
-                    <Item>1</Item>
+                  <Grid item xs={4} sm={4} md={4} key={0}>
+                    <Item>SETTLEMENT FOR INSTITUTIONS</Item>
                   </Grid>
-                  <Grid item xs={2} sm={4} md={4} key={0}>
-                    <Item>1</Item>
+                  <Grid item xs={4} sm={4} md={4} key={0}>
+                    <Item>Crypto Brokerage<br/>Build your crypto solution</Item>
                   </Grid>
-                  <Grid item xs={2} sm={4} md={4} key={0}>
-                    <Item>1</Item>
+                  <Grid item xs={4} sm={4} md={4} key={0}>
+                    <Item>itBit<br/>Crypto exchange</Item>
                   </Grid>
-                  <Grid item xs={2} sm={4} md={4} key={0}>
-                    <Item>1</Item>
+                  <Grid item xs={4} sm={4} md={4} key={0}>
+                    <Item>Securities<br/>Equities settlement for broker-dealers</Item>
+                  </Grid>
+                  <Grid item xs={4} sm={4} md={4} key={0}>
+                    <Item>Stablecoin and Payments<br/>Blockchain-enabled money movement</Item>
+                  </Grid>
+                  <Grid item xs={4} sm={4} md={4} key={0}>
+                    <Item>BUSD<br/>Regulated digital dollar</Item>
                   </Grid>
                 </Grid>
               </Box>
