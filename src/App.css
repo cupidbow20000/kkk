@@ -2,7 +2,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.App {
+.COM {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -203,11 +203,13 @@
 
 .bitcoin {
   width: 1200px;
+  margin-right: 5px;
   align-self: center;
 }
 
 .bitcoin > img {
   width:33%;
+  margin-left: 2px;
 }
 
 .portfolio {
@@ -221,7 +223,7 @@
 
 .lgtxt {
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   text-align: center;
   align-self: center;
@@ -231,8 +233,7 @@
 
 .smtxt {
   color: white;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
   text-align: center;
   align-self: center;
   padding-top: 20px;
@@ -265,7 +266,6 @@
   border-radius: 20px;
   border: none;
   background: linear-gradient(265.56deg, #CAFC01 -0.27%, #CAFC01 49.16%, #34A948 98.59%);
-  box-shadow: 0px 0px 15px #CAFC01;
   cursor: pointer;
 }
 
@@ -342,6 +342,14 @@
   font-size: large;
 }
 
+.w100 {
+  width:100%;
+}
+
+.w90 {
+  width:90%;
+}
+
 .w80 {
   width:80%;
 }
@@ -398,7 +406,7 @@
 .visa {
   position: absolute;
   z-index: 0;
-  top:2660px;
+  top:2500px;
   left:800px;
   width:13%;
 }
@@ -431,7 +439,246 @@
   align-self: center;
   display: flex;
   flex-direction: row;
-  bottom: 0px;
+  bottom: 80px;
   width:60%;
-  height:300px;
+  height:250px;
+  border-bottom: solid #8C8A8A;
+  border-width: 1px;
+}
+
+.quick {
+  color: #CAFC01 !important;
+}
+
+.quick > div{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right:120px;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  background: rgba(47, 50, 65, 0.5);
+  backdrop-filter: blur(7px);
+  color: white;
+  padding-left: 30px;
+  border-radius: 50px;
+}
+
+.submit > button {
+  position: absolute;
+  height: 30px;
+  top:10px;
+  right:5%;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(265.56deg, #CAFC01 -0.27%, #CAFC01 49.16%, #34A948 98.59%);
+  box-shadow: 0px 0px 10px #CAFC01;
+  cursor: pointer;
+}
+
+.copyright {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  bottom: 0px;
+  height:50px;
+  width:80%;
+}
+
+.copyright > div{
+  color:white;
+}
+
+.RES {
+  display:none;
+  background-color: black;
+}
+
+.cen {
+  align-self: center;
+}
+
+.res-body {
+  display:flex;
+  flex-direction: column;
+  padding-top: 50px;
+  align-self: center;
+}
+
+.smpad {
+  padding: 2px;
+}
+
+.menu {
+  position: absolute;
+  color:white;
+  top:20px;
+  right:20px;
+}
+
+.res-but {
+  padding: 10px;
+  border-radius: 40px;
+  align-self: center;
+  text-align: center;
+  border: none;
+  background: #4646cf !important;
+  color:white;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.resbuynow {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-self: center;
+  z-index: 1;
+  background: rgba(47, 50, 65, 0.5);
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+}
+
+.resbuynow > div {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.resbuynow > button {
+  padding: 10px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(265.56deg, #CAFC01 -0.27%, #CAFC01 49.16%, #34A948 98.59%);
+  cursor: pointer;
+}
+
+.resvisa {
+  position: absolute;
+  z-index: 0;
+  top:3000px;
+  width:60%;
+  height:42%;
+}
+
+.resplat {
+  padding: 10px;
+  color: white;
+}
+
+.resplat .head {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.resplat .body {
+  padding:10px;
+  width: 100%;
+}
+
+.resslideshow-container {
+  position: relative; 
+  align-self: center;
+  width: auto;
+  height: 200px;
+  display: flex;
+}
+.resgetstarted {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  height:230px;
+
+  background: rgba(47, 50, 65, 0.5);
+  backdrop-filter: blur(7px);
+
+  align-self: center;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.resgetstarted > div {
+  display: flex;
+  padding-top: 5px;
+}
+
+
+.resemail {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width:80%;
+  background: rgba(47, 50, 65, 0.5);
+  backdrop-filter: blur(7px);
+  color: white;
+  border-radius: 50px;
+}
+
+.resemail > button {
+  position: absolute;
+  height: 45px;
+  padding: 15px;
+  right:1%;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #4646cf;
+  cursor: pointer;
+}
+
+.resquick {
+  color: white !important;
+}
+
+.resquick > div{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right:120px;
+}
+
+.resfooter {
+  padding-left: 50px;
+  color: white ;
+  font-size: 12px;
+}
+
+.ressubmit {
+  display: flex;
+  flex-direction: column;
+  background: rgba(47, 50, 65, 0.5);
+  backdrop-filter: blur(7px);
+  padding-left: 10px;
+  border-radius: 50px;
+}
+
+.ressubmit > button {
+  position: absolute;
+  height: 30px;
+  top:8px;
+  right:3%;
+  width:80px;
+  border-radius: 20px;
+  border: none;
+  color: white !important;
+  background-color: #4646cf;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width:768px) {
+  .COM {
+    display: none;
+  }
+  .RES {
+    display: flex;
+    flex-direction: column;
+  }
 }
